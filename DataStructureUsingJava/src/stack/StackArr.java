@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * 
  * @author Rohit
- *
+ * Implement Stack using Array.
  */
 
 public class StackArr implements Serializable, Cloneable {
