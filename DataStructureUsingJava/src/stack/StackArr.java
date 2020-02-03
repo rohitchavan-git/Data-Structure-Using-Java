@@ -75,4 +75,10 @@ public class StackArr implements Serializable, Cloneable {
 	public boolean isUnderFlow() {
 		return this.isEmpty();
 	}
+	
+	public void showStack() {
+		if(this.isEmpty())
+			throw new IllegalStateException("Show Stack: Invaild Task.");
+		stack.stream().forEach(System.out::println);
+	}
 }

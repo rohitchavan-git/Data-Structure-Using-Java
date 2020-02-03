@@ -4,6 +4,8 @@ public class StackArrMain {
 
 	public static void main(String[] args) {
 		StackArr stack=new StackArr();
+		System.out.println("is it underflow ="+stack.isUnderFlow());
+		System.out.println("is it overflow ="+stack.isOverFlow());
 		stack.push(12);
 		stack.push(13);
 		stack.push(14);
@@ -14,6 +16,7 @@ public class StackArrMain {
 		System.out.println(stack.pop());
 		System.out.println("is it underflow ="+stack.isUnderFlow());
 		System.out.println("is it overflow ="+stack.isOverFlow());
+		stack.showStack();
 	}
 
 }
