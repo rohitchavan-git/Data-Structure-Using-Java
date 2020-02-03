@@ -88,7 +88,7 @@ public class SLList implements Serializable, Cloneable {
 
 	private void showList(Node currentNode) {
 		if (currentNode != null) {
-			System.out.println(currentNode.data+"->");
+			System.out.println(currentNode.data + "->");
 			this.showList(currentNode.next);
 		}
 	}
@@ -145,6 +145,24 @@ public class SLList implements Serializable, Cloneable {
 	}
 
 	/**
+	 * Get First Node Data
+	 * 
+	 * @return
+	 */
+	public int getFirst() {
+		return this.get(-1);
+	}
+
+	/**
+	 * Get Last Inserted Node Data
+	 * 
+	 * @return
+	 */
+	public int getLast() {
+		return this.get(this.size());
+	}
+
+	/**
 	 * Insert at give location.
 	 * 
 	 * @param loc
@@ -161,7 +179,7 @@ public class SLList implements Serializable, Cloneable {
 	private Node nodeAtIndex(int loc) {
 		if (isListEmpty())
 			throw new IllegalStateException("List is Empty.");
-		if (loc > this.getCount())
+		if (loc >= this.getCount())
 			throw new IllegalStateException("Invaild Location for inserting element.");
 		Node currentNode = this.head;
 		for (int i = 0; i < loc; i++) {
@@ -186,6 +204,17 @@ public class SLList implements Serializable, Cloneable {
 	 * @return
 	 */
 	public int get(int index) {
-		return this.nodeAtIndex(index).data;
+		return this.nodeAtIndex(index - 1).data;
+	}
+
+	/**
+	 * Delete node at Index 
+	 * 
+	 * @param index
+	 */
+
+	public void deleteNode(int index) {
+		Node nodeAtIndex = this.nodeAtIndex(index - 2);
+		nodeAtIndex.next = nodeAtIndex.next.next;
 	}
 }
