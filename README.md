@@ -1,6 +1,5 @@
 # Data-Structure-using-Java
- Learn Data Structures & Algorithms in Easy Way by creating custom collection classes in Java.  After we understand this repository code we will check my algorithm repository for more updates.
- Most of the code in this repository written using recursion concept.
+ Learn Data Structures & Algorithms in Easy Way by creating custom collection classes in Java.
 ## Topic covers
   * Array
   * ArrayList
