@@ -2,8 +2,7 @@ package utilNode;
 
 /**
  * 
- * @author Rohit 
- * Node class (Simple POJO)
+ * @author Rohit Node class (Simple POJO)
  *
  */
 public class Node {
@@ -35,5 +34,10 @@ public class Node {
 
 	public void setData(int data) {
 		this.data = data;
+	}
+
+	@Override
+	public String toString() {
+		return "Node [next=" + next + ", data=" + data + "]";
 	}
 }
