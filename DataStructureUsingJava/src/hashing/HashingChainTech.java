@@ -8,11 +8,16 @@ import utilNode.Node;
  * 
  * @author Rohit
  * 
- *         Mostly popular Hashing technique for avoiding Collision. 1.Chaining
- *         Internal Data Structure=Array of Linked list. 2.Open Addressing
- *         -Linear Probing -Quadratic Probing -Double Hashing Here we are using
- *         Chaining technique In Hashing package we are providing :=> -Chaining
- *         Using Custom class (Current) -Create Custom HashMap like class.
+ * Mostly popular Hashing technique for avoiding Collision.
+ *        1.Chaining
+ *        		Internal Data Structure=Array of Linked list. 
+ *        2.Open Addressing
+ *         		-Linear Probing -Quadratic Probing .
+ *         		-Double Hashing Here we are using Chaining technique .
+ *  In Hashing package we are providing :=> 
+ *  	 -Chaining Using Custom class (Current) 
+ *       -Create Custom HashMap class.
+ *       -Create Custom HashSet class.
  */
 public class HashingChainTech {
 
