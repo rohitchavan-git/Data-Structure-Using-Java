@@ -5,7 +5,8 @@ import java.util.Stack;
 
 /**
  * 
- * @author rohit implement binary search tree data structure in java
+ * @author rohit 
+ * implement binary search tree data structure in java
  *
  */
 public class BSTree implements Serializable, Cloneable {

@@ -2,10 +2,10 @@ package hashing;
 
 import java.io.Serializable;
 import java.util.NoSuchElementException;
+
 /**
  * 
- * @author Rohit
- * Custom HashMap
+ * @author Rohit Custom HashMap
  *
  */
 public class HashMapCustom implements Serializable, Cloneable {
@@ -143,4 +143,14 @@ public class HashMapCustom implements Serializable, Cloneable {
 		}
 
 	}
+
+	public void makeHashEmpty() {
+		setAllToNull(this.hashmap);
+	}
+	private void setAllToNull(NodeEntry[] tempHashMap) {
+		for (int i = 0; i < tempHashMap.length; i++) {
+			tempHashMap[i]=null;
+		}
+	}
+
 }

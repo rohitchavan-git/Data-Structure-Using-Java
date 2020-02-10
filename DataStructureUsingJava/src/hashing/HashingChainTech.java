@@ -111,5 +111,9 @@ public class HashingChainTech {
 			throw new NoSuchElementException(data + " is not present .");
 		}
 	}
+	
+	public void makeHashEmpty() {
+		
+	}
 
 }
