@@ -1,4 +1,4 @@
-# Data-Structure-using-Java
+# Data-Structure-using-Java (work in progress)
  Learn Data Structures & Algorithms in Easy Way by creating custom collection classes in Java.
 ## Topic covers
   * Array
