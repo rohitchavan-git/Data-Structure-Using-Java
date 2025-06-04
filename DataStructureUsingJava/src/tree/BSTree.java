@@ -97,13 +97,13 @@ public class BSTree implements Serializable, Cloneable {
 		postorder(this.root);
 	}
 
-	private void postorder(Node root) {
-		if (root != null) {
-			preorder(root.leftChild);
-			preorder(root.rightChild);
-			System.out.print(root.data + " ");
-		}
-	}
+       private void postorder(Node root) {
+               if (root != null) {
+                       postorder(root.leftChild);
+                       postorder(root.rightChild);
+                       System.out.print(root.data + " ");
+               }
+       }
 
 	public int getLength() {
 		return this.getCount();
